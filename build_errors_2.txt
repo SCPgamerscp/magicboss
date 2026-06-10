@@ -1,0 +1,135 @@
+﻿
+> Configure project :
+MixinGradle did not locate the diffplug APT plugin, skipping eclipse task configuration
+
+> Task :downloadMcpConfig
+> Task :extractSrg UP-TO-DATE
+> Task :createMcpToSrg UP-TO-DATE
+
+> Task :compileJava FAILED
+./gradlew : C:\Users\
+ecrea\Downloads\magic
+boss\src\main\java\co
+m\ecrea\elementmagicb
+oss\client\renderer\A
+ngelRazielRenderer.ja
+va:20: エラー: 不適合な型: An
+gelRazielRendererをGeo
+Renderer<AngelRazielE
+ntity>に変換できません:
+発生場所 行:1 文字:1
++ ./gradlew compileJa
+va --console=plain *>
+&1 | Out-File -FilePa
+th build ...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (C:\User   
+ s\ecrea\...ntity    
+>に変換できません::Strin    g
+) [], RemoteExc    ep
+tion
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+        this.addRende
+rLayer(new AngelRazie
+lWingsLayer(this));
+                     
+                     
+            ^
+C:\Users\ecrea\Downlo
+ads\magicboss\src\mai
+n\java\com\ecrea\elem
+entmagicboss\client\r
+enderer\AngelRazielRe
+nderer.java:23: エラー: 
+メソッドはスーパータイプのメソッドをオーバ
+ーライドまたは実装しません
+    @Override
+    ^
+C:\Users\ecrea\Downlo
+ads\magicboss\src\mai
+n\java\com\ecrea\elem
+entmagicboss\event\Cl
+ientModEvents.java:24
+: エラー: シンボルを見つけられません
+        event.registe
+rLayerDefinition(Ange
+lRazielModel.LAYER_LO
+CATION, AngelRazielMo
+del::createBodyLayer)
+;
+                     
+                     
+            ^
+  シンボル:   変数 LAYER_LO
+CATION
+  場所: クラス AngelRaziel
+Model
+C:\Users\ecrea\Downlo
+ads\magicboss\src\mai
+n\java\com\ecrea\elem
+entmagicboss\event\Cl
+ientModEvents.java:24
+: エラー: メソッド参照が無効です
+        event.registe
+rLayerDefinition(Ange
+lRazielModel.LAYER_LO
+CATION, AngelRazielMo
+del::createBodyLayer)
+;
+                     
+                     
+                     
+        ^
+  シンボルを見つけられません
+    シンボル:   メソッド crea
+teBodyLayer()
+    場所: クラス AngelRazi
+elModel
+ノート:C:\Users\ecrea\Do
+wnloads\magicboss\src
+\main\java\com\ecrea\
+elementmagicboss\enti
+ty\AngelRazielEntity.
+javaは推奨されないAPIを使用またはオ
+ーバーライドしています。
+ノート:詳細は、-Xlint:deprec
+ationオプションを指定して再コンパイル
+してください。
+ノート:一部のメッセージは簡略化されていま
+す。-Xdiags:verboseで再コン
+パイルして完全な出力を取得してください
+エラー4個
+
+FAILURE: Build failed
+ with an exception.
+
+* What went wrong:
+Execution failed for 
+task ':compileJava'.
+> Compilation failed;
+ see the compiler err
+or output for details
+.
+
+* Try:
+> Run with --info opt
+ion to get more log o
+utput.
+> Run with --scan to 
+get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 2s
+4 actionable tasks: 2 executed, 2 up-to-date

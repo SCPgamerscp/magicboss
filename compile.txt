@@ -1,0 +1,84 @@
+﻿
+> Configure project :
+MixinGradle did not locate the diffplug APT plugin, skipping eclipse task configuration
+files(...) dependencies are not deobfuscated. Use a flatDir repository instead: https://docs.gradle.org/current/userguide/declaring_repositories.html#sub:flat_dir_resolver
+Cannot deobfuscate dependency of type DefaultFileCollectionDependency_Decorated, using obfuscated version!
+
+> Task :downloadMcpConfig
+> Task :extractSrg UP-TO-DATE
+> Task :createMcpToSrg UP-TO-DATE
+
+> Task :compileJava
+.\gradlew : C:\Users\ec
+rea\Downloads\magicboss
+\src\main\java\com\ecre
+a\elementmagicboss\even
+t\ModEvents.java:65: 警告
+:[removal] ICuriosHelpe
+rのfindCurios(LivingEnti
+ty,Predicate<ItemStack>
+)は推奨されておらず、削除用にマークされていま
+す
+発生場所 行:1 文字:1
++ .\gradlew compileJava
+ > compile.log 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (C:\Users\ecre   
+ a\...ず、削除用にマークされてい    
+ます:String) [], Rem    o
+teException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+            int ringCou
+nt = CuriosApi.getCurio
+sHelper().findCurios(pl
+ayer, stack -> stack.ge
+tItem() == ModItems.GRE
+AT_WIZARD_RING.get()).s
+ize();
+                       
+                       
+         ^
+C:\Users\ecrea\Download
+s\magicboss\src\main\ja
+va\com\ecrea\elementmag
+icboss\event\ModEvents.
+java:203: 警告:[removal] 
+ICuriosHelperのfindCurio
+s(LivingEntity,Predicat
+e<ItemStack>)は推奨されておらず、
+削除用にマークされています
+            int ringCou
+nt = CuriosApi.getCurio
+sHelper().findCurios(pl
+ayer, stack -> stack.ge
+tItem() == ModItems.GRE
+AT_WIZARD_RING.get()).s
+ize();
+                       
+                       
+         ^
+ノート:C:\Users\ecrea\Down
+loads\magicboss\src\mai
+n\java\com\ecrea\elemen
+tmagicboss\event\ModEve
+nts.javaは推奨されないAPIを使用また
+はオーバーライドしています。
+ノート:詳細は、-Xlint:deprecat
+ionオプションを指定して再コンパイルしてくだ
+さい。
+警告2個
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 4s
+4 actionable tasks: 2 executed, 2 up-to-date

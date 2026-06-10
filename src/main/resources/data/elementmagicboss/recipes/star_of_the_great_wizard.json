@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ESE",
+        "SNS",
+        "ESE"
+    ],
+    "key": {
+        "E": {
+            "item": "elementmagicboss:enchanted_compressed_obsidian"
+        },
+        "S": {
+            "item": "minecraft:emerald_block"
+        },
+        "N": {
+            "item": "minecraft:nether_star"
+        }
+    },
+    "result": {
+        "item": "elementmagicboss:star_of_the_great_wizard"
+    }
+}

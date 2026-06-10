@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.ecrea.elementmagicboss.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "elementmagicboss.refmap.json",
+  "mixins": [
+    "PlayerMixin",
+    "CreeperHeadProjectileMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

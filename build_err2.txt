@@ -1,0 +1,9 @@
+C:\Users\ecrea\Downloads\magicboss\src\main\java\com\ecrea\elementmagicboss\event\ModEvents.java:65: 警告:[removal] ICuriosHelperのfindCurios(LivingEntity,Predicate<ItemStack>)は推奨されておらず、削除用にマークされています
+            int ringCount = CuriosApi.getCuriosHelper().findCurios(player, stack -> stack.getItem() == ModItems.GREAT_WIZARD_RING.get()).size();
+                                                       ^
+C:\Users\ecrea\Downloads\magicboss\src\main\java\com\ecrea\elementmagicboss\event\ModEvents.java:203: 警告:[removal] ICuriosHelperのfindCurios(LivingEntity,Predicate<ItemStack>)は推奨されておらず、削除用にマークされています
+            int ringCount = CuriosApi.getCuriosHelper().findCurios(player, stack -> stack.getItem() == ModItems.GREAT_WIZARD_RING.get()).size();
+                                                       ^
+ノート:一部の入力ファイルは推奨されないAPIを使用またはオーバーライドしています。
+ノート:詳細は、-Xlint:deprecationオプションを指定して再コンパイルしてください。
+警告2個

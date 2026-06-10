@@ -1,0 +1,11 @@
+テクスチャファイルを手動でコピーしてください：
+
+元のファイル: C:\Users\ecrea\Downloads\magicboss\angelA羽つき.png
+コピー先: C:\Users\ecrea\Downloads\magicboss\src\main\resources\assets\elementmagicboss\textures\entity\angel_rasiel.png
+
+Windowsエクスプローラーで：
+1. C:\Users\ecrea\Downloads\magicboss\angelA羽つき.png を右クリック
+2. 「コピー」を選択
+3. C:\Users\ecrea\Downloads\magicboss\src\main\resources\assets\elementmagicboss\textures\entity\ フォルダを開く
+4. 右クリックして「貼り付け」
+5. ファイル名を angel_rasiel.png にリネーム

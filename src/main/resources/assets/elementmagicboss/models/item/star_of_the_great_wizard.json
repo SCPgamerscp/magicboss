@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "elementmagicboss:item/star_of_the_great_wizard"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "elementmagicboss:star_of_the_great_wizard"
+        },
+        "title": {
+            "translate": "advancements.elementmagicboss.root.title"
+        },
+        "description": {
+            "translate": "advancements.elementmagicboss.root.description"
+        },
+        "background": "minecraft:textures/block/obsidian.png",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

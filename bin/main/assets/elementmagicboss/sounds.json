@@ -1,0 +1,88 @@
+{
+  "raziel_battle_music_1": {
+    "category": "music",
+    "subtitle": "subtitles.elementmagicboss.raziel_battle_music_1",
+    "sounds": [
+      {
+        "name": "elementmagicboss:music/raziel_battle_music_1",
+        "stream": true
+      }
+    ]
+  },
+  "raziel_battle_music_2": {
+    "category": "music",
+    "subtitle": "subtitles.elementmagicboss.raziel_battle_music_2",
+    "sounds": [
+      {
+        "name": "elementmagicboss:music/raziel_battle_music_2",
+        "stream": true
+      }
+    ]
+  },
+  "battle_music_1": {
+    "category": "music",
+    "subtitle": "subtitles.elementmagicboss.battle_music_1",
+    "sounds": [
+      {
+        "name": "elementmagicboss:music/battle_music_1",
+        "stream": true
+      }
+    ]
+  },
+  "battle_music_2": {
+    "category": "music",
+    "subtitle": "subtitles.elementmagicboss.battle_music_2",
+    "sounds": [
+      {
+        "name": "elementmagicboss:music/battle_music_2",
+        "stream": true
+      }
+    ]
+  },
+  "skeleton_king_music_1": {
+    "category": "music",
+    "subtitle": "subtitles.elementmagicboss.skeleton_king_music_1",
+    "sounds": [
+      {
+        "name": "elementmagicboss:music/skeleton_king_phase_1",
+        "stream": true
+      }
+    ]
+  },
+  "skeleton_king_music_2": {
+    "category": "music",
+    "subtitle": "subtitles.elementmagicboss.skeleton_king_music_2",
+    "sounds": [
+      {
+        "name": "elementmagicboss:music/skeleton_king_phase_2",
+        "stream": true
+      }
+    ]
+  },
+  "skeleton_king_music_3": {
+    "category": "music",
+    "subtitle": "subtitles.elementmagicboss.skeleton_king_music_3",
+    "sounds": [
+      {
+        "name": "elementmagicboss:music/skeleton_king_phase_3",
+        "stream": true
+      }
+    ]
+  },
+  "abyss_blast_only_charge": {
+    "subtitle": "subtitles.elementmagicboss.abyss_blast_charge",
+    "sounds": [
+      {
+        "name": "elementmagicboss:entity/abyss_blast_only_charge"
+      }
+    ]
+  },
+  "abyss_blast_only_shoot": {
+    "subtitle": "subtitles.elementmagicboss.abyss_blast_shoot",
+    "sounds": [
+      {
+        "name": "elementmagicboss:entity/abyss_blast_only_shoot"
+      }
+    ]
+  }
+}

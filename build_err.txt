@@ -1,0 +1,2 @@
+ノート:C:\Users\ecrea\Downloads\magicboss\src\main\java\com\ecrea\elementmagicboss\event\InfiniteRapidFireHandler.javaは推奨されないAPIを使用またはオーバーライドしています。
+ノート:詳細は、-Xlint:deprecationオプションを指定して再コンパイルしてください。

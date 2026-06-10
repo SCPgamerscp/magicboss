@@ -1,0 +1,1 @@
+import net.minecraft.world.item.ItemStack; import net.minecraft.world.item.Items; import net.minecraft.nbt.CompoundTag; public class TestNBT { public static void main(String[] args) { System.out.println("OK"); } }

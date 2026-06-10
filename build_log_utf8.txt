@@ -1,0 +1,184 @@
+﻿
+> Configure project :
+MixinGradle did not locate the diffplug APT plugin, skipping eclipse task configuration
+files(...) dependencies are not deobfuscated. Use a flatDir repository instead: https://docs.gradle.org/current/userguide/declaring_repositories.html#sub:flat_dir_resolver
+Cannot deobfuscate dependency of type DefaultFileCollectionDependency_Decorated, using obfuscated version!
+
+> Task :downloadMcpConfig
+> Task :extractSrg UP-TO-DATE
+> Task :createMcpToSrg UP-TO-DATE
+
+> Task :compileJava FAILED
+.\gradlew : C:\Users\
+ecrea\Downloads\magic
+boss\src\main\java\co
+m\ecrea\elementmagicb
+oss\enchantment\ModEn
+chantments.java:27: エ
+ラー: シンボルを見つけられません
+発生場所 行:1 文字:1
++ .\gradlew compileJa
+va > build_log.txt 2>
+&1
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (C:\User   
+ s\ecrea\...: シンボ    
+ルを見つけられません:Strin    g
+) [], RemoteExc    ep
+tion
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+            () -> new
+ GenericStatEnchantme
+nt(Enchantment.Rarity
+.RARE, EnchantmentCat
+egory.ARMOR));
+                     
+                     
+                     
+       ^
+  シンボル:   変数 Enchantm
+entCategory
+  場所: クラス ModEnchantm
+ents
+C:\Users\ecrea\Downlo
+ads\magicboss\src\mai
+n\java\com\ecrea\elem
+entmagicboss\enchantm
+ent\ModEnchantments.j
+ava:30: エラー: シンボルを見つけ
+られません
+            () -> new
+ GenericStatEnchantme
+nt(Enchantment.Rarity
+.VERY_RARE, Enchantme
+ntCategory.BREAKABLE)
+);
+                     
+                     
+                     
+            ^
+  シンボル:   変数 Enchantm
+entCategory
+  場所: クラス ModEnchantm
+ents
+C:\Users\ecrea\Downlo
+ads\magicboss\src\mai
+n\java\com\ecrea\elem
+entmagicboss\enchantm
+ent\ModEnchantments.j
+ava:33: エラー: シンボルを見つけ
+られません
+            () -> new
+ GenericStatEnchantme
+nt(Enchantment.Rarity
+.RARE, EnchantmentCat
+egory.WEAPON));
+                     
+                     
+                     
+       ^
+  シンボル:   変数 Enchantm
+entCategory
+  場所: クラス ModEnchantm
+ents
+C:\Users\ecrea\Downlo
+ads\magicboss\src\mai
+n\java\com\ecrea\elem
+entmagicboss\enchantm
+ent\ModEnchantments.j
+ava:36: エラー: シンボルを見つけ
+られません
+            () -> new
+ GenericStatEnchantme
+nt(Enchantment.Rarity
+.VERY_RARE, Enchantme
+ntCategory.ARMOR));
+                     
+                     
+                     
+            ^
+  シンボル:   変数 Enchantm
+entCategory
+  場所: クラス ModEnchantm
+ents
+C:\Users\ecrea\Downlo
+ads\magicboss\src\mai
+n\java\com\ecrea\elem
+entmagicboss\event\Mo
+dEvents.java:45: 警告:[
+removal] ICuriosHelpe
+rのfindCurios(LivingEn
+tity,Predicate<ItemSt
+ack>)は推奨されておらず、削除用にマー
+クされています
+            int ringC
+ount = CuriosApi.getC
+uriosHelper().findCur
+ios(player, stack -> 
+stack.getItem() == Mo
+dItems.GREAT_WIZARD_R
+ING.get()).size();
+                     
+                     
+             ^
+C:\Users\ecrea\Downlo
+ads\magicboss\src\mai
+n\java\com\ecrea\elem
+entmagicboss\event\Mo
+dEvents.java:109: 警告:
+[removal] ICuriosHelp
+erのfindCurios(LivingE
+ntity,Predicate<ItemS
+tack>)は推奨されておらず、削除用にマ
+ークされています
+            int ringC
+ount = CuriosApi.getC
+uriosHelper().findCur
+ios(player, stack -> 
+stack.getItem() == Mo
+dItems.GREAT_WIZARD_R
+ING.get()).size();
+                     
+                     
+             ^
+ノート:一部の入力ファイルは推奨されないA
+PIを使用またはオーバーライドしています。
+ノート:詳細は、-Xlint:deprec
+ationオプションを指定して再コンパイル
+してください。
+エラー4個
+警告2個
+
+FAILURE: Build failed
+ with an exception.
+
+* What went wrong:
+Execution failed for 
+task ':compileJava'.
+> Compilation failed;
+ see the compiler err
+or output for details
+.
+
+* Try:
+> Run with --info opt
+ion to get more log o
+utput.
+> Run with --scan to 
+get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 3s
+4 actionable tasks: 2 executed, 2 up-to-date

@@ -1,0 +1,1 @@
+    "spell.elementmagicboss.sea_of_fire.guide":  "Hurl a massive magma bomb that creates a vast, long-burning fire field three times the size and duration of a normal Magma Bomb.",

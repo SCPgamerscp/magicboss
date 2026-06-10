@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "elementmagicboss:enchanted_compressed_obsidian"
+        },
+        "title": {
+            "translate": "advancements.elementmagicboss.taste_of_the_strongest.title"
+        },
+        "description": {
+            "translate": "advancements.elementmagicboss.taste_of_the_strongest.description"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "elementmagicboss:step_towards_the_strongest",
+    "criteria": {
+        "eat_item": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "elementmagicboss:enchanted_compressed_obsidian"
+                    ]
+                }
+            }
+        }
+    }
+}

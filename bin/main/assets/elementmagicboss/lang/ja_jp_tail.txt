@@ -1,0 +1,7 @@
+  "death.attack.elementmagicboss.flying_blood_slash": "%1$sは%2$sの飛血刃に刻まれた",
+  "death.attack.elementmagicboss.flying_blood_slash.item": "%1$sは%2$sの%3$sによる飛血刃に刻まれた",
+  "spell.elementmagicboss.sea_of_fire": "火の海",
+  "spell.elementmagicboss.sea_of_fire.guide": "7発のマグマ爆弾を放つ。それぞれが巨大な炎のフィールドを生み出す。",
+  "death.attack.elementmagicboss.sea_of_fire": "%1$sは%2$sの火の海に飲み込まれた",
+  "death.attack.elementmagicboss.sea_of_fire.item": "%1$sは%2$sの%3$sによる火の海に飲み込まれた"
+}

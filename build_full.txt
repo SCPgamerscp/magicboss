@@ -1,0 +1,76 @@
+﻿
+> Configure project :
+MixinGradle did not locate the diffplug APT plugin, skipping eclipse task configuration
+
+> Task :downloadMcpConfig
+> Task :extractSrg UP-TO-DATE
+> Task :createMcpToSrg UP-TO-DATE
+
+> Task :compileJava FAILED
+./gradlew : C:\Users\ecrea
+\Downloads\magicboss\src\m
+ain\java\com\ecrea\element
+magicboss\entity\AngelRazi
+elEntity.java:211: エラー: シン
+ボルを見つけられません
+発生場所 行:1 文字:1
++ ./gradlew compileJava --
+console=plain *>&1 | Out-F
+ile -FilePath build ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (C  
+  :\Users\ecrea\...: シン   
+ ボルを見つけられません:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+                    MagicM
+anager.spawnParticles(this
+.level(), ParticleHelper.U
+NHOLY, this.getX(), this.g
+etY() + 1.5, this.getZ(), 
+5, 0.5, 0.5, 0.5, 0.1, fal
+se);
+                          
+                          
+                        ^
+  シンボル:   変数 UNHOLY
+  場所: クラス ParticleHelper
+ノート:C:\Users\ecrea\Downloa
+ds\magicboss\src\main\java
+\com\ecrea\elementmagicbos
+s\entity\AngelRazielEntity
+.javaは推奨されないAPIを使用またはオーバーラ
+イドしています。
+ノート:詳細は、-Xlint:deprecation
+オプションを指定して再コンパイルしてください。
+エラー1個
+
+FAILURE: Build failed with
+ an exception.
+
+* What went wrong:
+Execution failed for task 
+':compileJava'.
+> Compilation failed; see 
+the compiler error output 
+for details.
+
+* Try:
+> Run with --info option t
+o get more log output.
+> Run with --scan to get f
+ull insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 3s
+4 actionable tasks: 2 executed, 2 up-to-date

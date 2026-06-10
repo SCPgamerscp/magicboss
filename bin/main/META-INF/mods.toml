@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All rights reserved"
+issueTrackerURL="http://my.issue.tracker/"
+showAsResourcePack=false
+
+[[mods]]
+modId="elementmagicboss"
+version="1.0"
+displayName="Magic Boss"
+updateJSONURL="http://my.update.json/"
+displayURL="http://example.com/"
+logoFile="examplemod.png"
+credits="Thanks for this mod."
+authors="ecrea"
+description='''
+Legendary Wizard "Element" Boss Mod.
+'''
+dependencies.elementmagicboss=[
+    {modId="forge", mandatory=true, versionRange="[47,)", ordering="NONE", side="BOTH"},
+    {modId="minecraft", mandatory=true, versionRange="[1.20.1,1.21)", ordering="NONE", side="BOTH"},
+    {modId="irons_spellbooks", mandatory=true, versionRange="[0,)", ordering="ANY", side="BOTH"}
+]
+
+[[mixins]]
+config = "elementmagicboss.mixins.json"

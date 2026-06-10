@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "elementmagicboss:enchanted_compressed_obsidian"
+        },
+        "title": {
+            "translate": "advancements.elementmagicboss.step_towards_the_strongest.title"
+        },
+        "description": {
+            "translate": "advancements.elementmagicboss.step_towards_the_strongest.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "elementmagicboss:root",
+    "criteria": {
+        "obtain_item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "elementmagicboss:enchanted_compressed_obsidian"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}
