@@ -74,6 +74,8 @@ public class SkeletonKingEntity extends AbstractSpellCastingMob implements GeoEn
         }
     }
 
+    private final AnimatableInstanceCache geoCache = GeckoLibUtil.createInstanceCache(this);
+
     private static final EntityDataAccessor<Integer> PHASE = SynchedEntityData.defineId(SkeletonKingEntity.class, EntityDataSerializers.INT);
     private ExtendedServerBossEvent bossEvent;
     
@@ -306,8 +308,27 @@ public class SkeletonKingEntity extends AbstractSpellCastingMob implements GeoEn
     @Override
     public void registerControllers(software.bernie.geckolib.core.animation.AnimatableManager.ControllerRegistrar controllers) {
         super.registerControllers(controllers);
+        controllers.add(new software.bernie.geckolib.core.animation.AnimationController<>(this, "controller", 0, this::predicate));
     }
 
+    private software.bernie.geckolib.core.object.PlayState predicate(software.bernie.geckolib.core.animation.AnimationState<SkeletonKingEntity> event) {
+        if (this.isCasting()) {
+            event.getController().setAnimation(software.bernie.geckolib.core.animation.RawAnimation.begin().thenLoop("animation.skeleton_king.cast"));
+            return software.bernie.geckolib.core.object.PlayState.CONTINUE;
+        }
+        if (event.isMoving()) {
+            event.getController().setAnimation(software.bernie.geckolib.core.animation.RawAnimation.begin().thenLoop("animation.skeleton_king.walk"));
+            return software.bernie.geckolib.core.object.PlayState.CONTINUE;
+        }
+
+        event.getController().setAnimation(software.bernie.geckolib.core.animation.RawAnimation.begin().thenLoop("animation.skeleton_king.idle"));
+        return software.bernie.geckolib.core.object.PlayState.CONTINUE;
+    }
+
+    @Override
+    public AnimatableInstanceCache getAnimatableInstanceCache() {
+        return this.geoCache;
+    }
 
     @Override
     public boolean hurt(DamageSource pSource, float pAmount) {
