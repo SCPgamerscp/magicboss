@@ -74,6 +74,8 @@ public class SkeletonKingEntity extends AbstractSpellCastingMob implements GeoEn
         }
     }
 
+    private final AnimatableInstanceCache geoCache = GeckoLibUtil.createInstanceCache(this);
+
     private static final EntityDataAccessor<Integer> PHASE = SynchedEntityData.defineId(SkeletonKingEntity.class, EntityDataSerializers.INT);
     private ExtendedServerBossEvent bossEvent;
     
@@ -308,6 +310,10 @@ public class SkeletonKingEntity extends AbstractSpellCastingMob implements GeoEn
         super.registerControllers(controllers);
     }
 
+    @Override
+    public AnimatableInstanceCache getAnimatableInstanceCache() {
+        return this.geoCache;
+    }
 
     @Override
     public boolean hurt(DamageSource pSource, float pAmount) {
