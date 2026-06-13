@@ -179,6 +179,15 @@
 					]
 				},
 				{
+					"name": "rightItem",
+					"parent": "right_arm",
+					"pivot": [
+						-6,
+						12,
+						0
+					]
+				},
+				{
 					"name": "left_arm",
 					"parent": "body",
 					"pivot": [
@@ -225,6 +234,15 @@
 				{
 					"name": "bipedHandLeft",
 					"parent": "left_arm",
+					"pivot": [
+						6,
+						12,
+						0
+					]
+				},
+				{
+					"name": "leftItem",
+					"parent": "bipedHandLeft",
 					"pivot": [
 						6,
 						12,
