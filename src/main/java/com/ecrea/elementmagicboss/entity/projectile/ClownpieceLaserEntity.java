@@ -102,9 +102,9 @@ public class ClownpieceLaserEntity extends Entity implements IEntityAdditionalSp
             if (dist < 0.9) {
                 le.invulnerableTime = 0;
                 DamageSources.applyDamage(le, damage,
-                        io.redspace.ironsspellbooks.api.registry.SpellRegistry
-                                .getSpell("elementmagicboss:clownpiece")
-                                .getDamageSource(this, owner));
+                        com.ecrea.elementmagicboss.spell.ModSpells.CLOWNPIECE.get()
+                                .getDamageSource(this, owner)
+                );
             }
         }
     }
