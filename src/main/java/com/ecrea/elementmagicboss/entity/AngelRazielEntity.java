@@ -436,6 +436,18 @@ public class AngelRazielEntity extends AbstractSpellCastingMob implements GeoEnt
     }
 
     @Override
+    public boolean doHurtTarget(net.minecraft.world.entity.Entity target) {
+        if (target instanceof net.minecraft.world.entity.LivingEntity livingTarget) {
+            livingTarget.invulnerableTime = 0;
+        }
+        boolean flag = super.doHurtTarget(target);
+        if (target instanceof net.minecraft.world.entity.LivingEntity livingTarget) {
+            livingTarget.invulnerableTime = 0;
+        }
+        return flag;
+    }
+
+    @Override
     public boolean removeWhenFarAway(double pDistanceSq) {
         return false;
     }
