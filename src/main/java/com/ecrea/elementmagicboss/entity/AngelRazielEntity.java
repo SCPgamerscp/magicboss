@@ -465,4 +465,15 @@ public class AngelRazielEntity extends AbstractSpellCastingMob implements GeoEnt
         
         return super.hurt(source, amount);
     }
+
+    @Override
+    public boolean doHurtTarget(net.minecraft.world.entity.Entity target) {
+        if (target instanceof net.minecraft.world.entity.LivingEntity livingTarget) {
+            livingTarget.invulnerableTime = 0;  // 攻撃前に無敵時間を0に
+            boolean result = super.doHurtTarget(target);
+            livingTarget.invulnerableTime = 0;  // 攻撃後も無敵時間を0に
+            return result;
+        }
+        return super.doHurtTarget(target);
+    }
 }
