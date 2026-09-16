@@ -296,7 +296,7 @@ public class TouhouPresetBulletProjectile extends DanmakuShotProjectile {
 
     @Override
     protected AbstractSpell resolveDamageSpell() {
-        AbstractSpell spell = SpellRegistry.getSpell(getDamageSpellId());
+        AbstractSpell spell = SpellRegistry.getSpell(new net.minecraft.resources.ResourceLocation(getDamageSpellId()));
         return spell == SpellRegistry.none() ? ModSpells.DANMAKU_SHOT.get() : spell;
     }
 
