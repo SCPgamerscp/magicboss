@@ -184,7 +184,7 @@ public class DanmakuShotProjectile extends Projectile implements IEntityAddition
     }
 
     protected AbstractSpell resolveDamageSpell() {
-        AbstractSpell spell = SpellRegistry.getSpell(damageSpellId);
+        AbstractSpell spell = SpellRegistry.getSpell(new net.minecraft.resources.ResourceLocation(damageSpellId));
         return spell == SpellRegistry.none() ? ModSpells.DANMAKU_SHOT.get() : spell;
     }
 

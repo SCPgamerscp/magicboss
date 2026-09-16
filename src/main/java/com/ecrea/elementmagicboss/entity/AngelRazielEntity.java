@@ -446,6 +446,15 @@ public class AngelRazielEntity extends AbstractSpellCastingMob implements GeoEnt
     }
 
     @Override
+    public boolean doHurtTarget(net.minecraft.world.entity.Entity pEntity) {
+        boolean flag = super.doHurtTarget(pEntity);
+        if (flag) {
+            pEntity.invulnerableTime = 0;
+        }
+        return flag;
+    }
+
+    @Override
     public boolean hurt(DamageSource source, float amount) {
         if (!this.level().isClientSide && this.getPhase() == PHASE_TRANSITIONING) {
             return false;

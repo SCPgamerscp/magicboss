@@ -316,6 +316,15 @@ public class SkeletonKingEntity extends AbstractSpellCastingMob implements GeoEn
     }
 
     @Override
+    public boolean doHurtTarget(net.minecraft.world.entity.Entity pEntity) {
+        boolean flag = super.doHurtTarget(pEntity);
+        if (flag) {
+            pEntity.invulnerableTime = 0;
+        }
+        return flag;
+    }
+
+    @Override
     public boolean hurt(DamageSource pSource, float pAmount) {
         if (currentDialogue != null) return false;
         

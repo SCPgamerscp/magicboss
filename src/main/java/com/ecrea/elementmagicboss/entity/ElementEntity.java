@@ -105,6 +105,15 @@ public class ElementEntity extends AbstractSpellCastingMob implements IClientEve
     }
 
     @Override
+    public boolean doHurtTarget(net.minecraft.world.entity.Entity pEntity) {
+        boolean flag = super.doHurtTarget(pEntity);
+        if (flag) {
+            pEntity.invulnerableTime = 0;
+        }
+        return flag;
+    }
+
+    @Override
     public boolean hurt(DamageSource pSource, float pAmount) {
         if (this.getHealth() - pAmount <= HP_THRESHOLD && this.phase < MAX_PHASES - 1) {
             int oldPhase = this.phase;
