@@ -90,7 +90,7 @@ public class ClownpieceBulletEntity extends Projectile implements IEntityAdditio
     protected void onHitEntity(EntityHitResult result) {
         if (level().isClientSide) return;
         Entity target = result.getEntity();
-        DamageSources.applyDamage(target, damage,
+        io.redspace.ironsspellbooks.damage.DamageSources.applyDamage(target, damage,
                 io.redspace.ironsspellbooks.api.registry.SpellRegistry
                         .getSpell("elementmagicboss:clownpiece")
                         .getDamageSource(this, getOwner()));
